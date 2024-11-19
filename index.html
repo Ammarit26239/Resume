@@ -1,18 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
+    <!-- Link to Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="s/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="buttom.css">
 </head>
 <body>
-    <h1>404 Not found! </h1> 
-    <hr>
-    <img src="https://ichef.bbci.co.uk/news/923/cpsprodpb/bd42/live/6f434920-19cf-11ef-a732-137bfad2dbd1.jpg" width="200">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My Resume</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Employment</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-<p> &emsp;&emsp;  ภาษาต่างดาว (ญี่ปุ่น: 文字化け; โรมาจิ: mojibake; ทับศัพท์: โมจิบาเกะ) หมายถึง อาการซึ่งซอฟต์แวร์คอมพิวเตอร์แสดงตัวอักษรที่ไม่ถูกต้อง เนื่องจากการตั้งค่ารหัสอักขระที่ไม่ตรงกัน ทำให้ผู้ใช้เห็นข้อความที่อ่านไม่ออกและมักจะเห็น</p>
+      
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- About Me Section -->
+        <section id="about">
+            <div class="text-center">
+             <img src="56674.jpg" alt="Profile Picture" class="rounded-circle" width="150" >
+                <h1>Ammarit Intarasuntorn</h1>
+                <em>Major:Digital and Information Technology</em>
+                <p>Faculty of Engineer and Technology, Panyapiwat institute of management</p>
+                <a href="http://pim.ac.th" target="_blank">เยี่ยมชมเว็บไซต์ของสถาบัน</a>
+            </div>
+            <hr>
+            <p>ยินดีต้อนรับสู่ Resume ของฉัน! ฉันเป็นนักศึกษาที่มุ่งมั่นและต้องการพัฒนาทักษะเพื่อสร้างคุณค่าให้กับองค์กร.</p>
+        </section>
 
-<p>&emsp;&emsp; อาการนี้มักเกิดจากการเปิดแฟ้มเอกสารที่ไม่ได้ระบุชุดรหัสอักขระไว้, ระบุไว้ผิด, หรือชุดรหัสอักขระที่ใช้ในแฟ้มนั้น ๆ ไม่ได้ติดตั้งอยู่ในซอฟต์แวร์ของผู้ใช้ ทำให้ชุดอักขระมาตรฐานของระบบถูกใช้แทน ซึ่งอาจจะไม่ตรงกับชุดอักขระที่แฟ้มนั้นใช้จริง ๆ</p>
-  <p> &emsp;&emsp; เช่น แฟ้มข้อมูลที่มีคำว่า "ภาษาไทย" ที่เข้ารหัสด้วยมาตรฐานมอก.620 เมื่อนำไปแสดงบนซอฟต์แวร์ตะวันตกที่ไม่ได้รองรับภาษาไทย จะใช้ชุดอักขระรหัส ISO-8859-1 แสดงผล ทำให้เห็นข้อความเป็น "ÀÒÉÒä·Â" หรือแฟ้มข้อมูลที่มีคำว่า "ภาษาไทย" ที่เข้ารหัสด้วยมาตรฐาน UTF-8 เมื่อนำมาแสดงบนซอฟต์แวร์ไทยที่ใช้การเข้ารหัส มอก.620 จะแสดงผลเป็น "เธ เธฒเธฉเธฒเนเธเธข"</p>     
+        <!-- Education Section -->
+        <section id="education" class="mt-5">
+            <h2>Education</h2>
+            <p>รายละเอียดการศึกษาของคุณ</p>
+            <ul>
+                <li><img src="TNW.jpg" width="5%" height="65px" >Thatnarai Wittaya School</li>
+                <li><img src="Logo_PIM.png" width="5%" height="65">Panyapiwat institute of management</li>
+            </ul>
+            <hr>
+        </section>
+
+        <!-- Employment History -->
+        <section id="experience" class="mt-5">
+            <h2>Employment History</h2>
+            <p>ประสบการณ์การทำงาน</p>
+            <ul>
+                <li>7-11</li>
+                <li>Software Engineer</li>
+            </ul>
+            <hr>
+        </section>
+       <!-- Project Section -->
+        <section id="Project" class="mt-5">
+            <h2>Project</h2>
+            <ul>
+                <li>Internal Revenue Service Tax Calculate Programing</li>
+                <li>Wireless Smarthome Application</li>
+                <li>HYBS Band Family</li>
+                <hr>
+            </ul>
+        </section>
+        <!-- Skills Section -->
+        <section id="skills" class="mt-5">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>Java</li>
+                <li>Mysql</li> 
+            </ul>
+            <hr>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mt-5">
+            <h2>Contact</h2>
+            <ol>
+                <li>Email: <a href="mailto:6652100312@stu.pim.ac.th">6652100312@stu.pim.ac.th</a></li>
+                <li>Phone: 012-345-6789</li>
+                <li>Address: Bangkok, Thailand</li>
+            </ol>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
 </body>
-</html> 
+</html>
+
